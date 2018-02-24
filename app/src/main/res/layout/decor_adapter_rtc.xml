@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<iamrajendra.github.io.webrtcadapter.video.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/c_fl"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/top_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="30dp"
+                android:id="@+id/usertop_iv"
+                android:src="@drawable/randeep"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:text="Rajendra Verma"
+                android:id="@+id/usernametop_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/signal_level_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signal_levels"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/user_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/randeep" />
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/setting_blue"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/mic_check_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setdither_mic"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</iamrajendra.github.io.webrtcadapter.video.PercentFrameLayout>

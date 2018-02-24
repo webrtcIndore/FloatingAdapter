@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RTC Adapter</string>
+    <string name="title_activity_view_testing">ViewTestingActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+</resources>
